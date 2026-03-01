@@ -1,0 +1,168 @@
+body{
+    display: flex;
+
+    color: hsl(0, 0%, 100%);
+}
+#container{
+    
+   background-color: hsl(0, 0%, 7%);
+    min-width: 800px;
+    padding: 2rem 3rem;
+    margin: 0 auto; 
+    margin-top: 5rem;
+
+}
+.header{
+    display: flex;
+    position: relative;
+}
+#logoLarge{
+    flex: 1;
+    
+}
+.pb{
+    flex:1;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    transform: translateY(-50%);
+    font-family: variable;
+    color: hsl(240, 1%, 59%);
+    font-size: 12px;
+}
+#pbL, #pb{
+    margin-right: 6px;
+}
+@font-face {
+    font-family: bold;
+    src: url(static/Sora-Bold.ttf);
+}
+#pbO{
+    font-family: semibold;
+    color: white;
+}
+@font-face {
+    font-family: regular;
+    src: url(static/Sora-Regular.ttf);
+}
+@font-face {
+    font-family: semibold;
+    src: url(static/Sora-SemiBold.ttf);
+}
+@font-face {
+    font-family: variable;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+#content{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+#checkmark{
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 0 0 0 10px hsla(140, 63%, 57%, 0.555), 0 0 0 20px hsla(140, 63%, 57%, 0.274);
+}
+#star1{
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    border: none;
+    border-radius: 50%;
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: bold;
+}
+#subtitle{
+    font-family: regular;
+    color: hsl(240, 1%, 59%);
+    margin-top: 0px;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+#cont{
+    position: relative;
+    
+}
+#outlook{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.outlook{
+    height: 75px;
+    width: 115px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsl(240, 1%, 59%);
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 15px;
+}
+.outlookO{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.outT{
+    font-family: regular;
+    color:hsl(240, 1%, 59%);
+    margin-bottom: 5px;
+}
+#decider{
+    display: flex;
+}
+#e5{
+    font-family: bold;
+}
+#n0,#outlookD{
+    font-family: bold;
+    color: hsl(354, 63%, 57%);
+}
+#outlookC{
+    font-family: bold;
+    color: hsl(140, 63%, 57%);
+}
+#slash{
+    font-family: bold;
+    color: hsl(240, 1%, 59%);
+}
+#star2{
+    position:absolute;
+    right: 18%;
+    top: 370px;
+    max-height: 80px;
+}
+#goAgain{
+    position: relative;
+
+}
+#b_result{
+    margin-left: 50%;
+    margin-top: 120px;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: none;
+    border-radius:10px;
+    cursor: pointer;
+    font-family: semibold;
+    font-size: 12px;
+}
+#confetti{
+    border: 1px 1px solid white;
+
+    flex: 1;
+    bottom: 0;
+    max-width:max-content;
+    margin-top: 3rem;
+    max-height: 180px;
+}

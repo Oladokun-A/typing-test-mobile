@@ -1,0 +1,172 @@
+body{
+    display: flex;
+
+    color: hsl(0, 0%, 100%);
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(0, 0%, 7%);
+    min-height: 85lvh;
+    min-width: 800px;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.header{
+    display: flex;
+    position: relative;
+}
+#logoLarge{
+    flex: 1;
+}
+.pb{
+    flex:1;
+    right: 0px;
+    position: absolute;
+    display: flex;
+    transform: translateY(-50%);
+    font-family: variable;
+    color: hsl(240, 1%, 59%);
+    font-size: 12px;
+}
+#pbL, #pb{
+    margin-right: 6px;
+}
+@font-face {
+    font-family: bold;
+    src: url(static/Sora-Bold.ttf);
+}
+#pbO{
+    font-family: semibold;
+    color: white;
+}
+@font-face {
+    font-family: regular;
+    src: url(static/Sora-Regular.ttf);
+}
+@font-face {
+    font-family: semibold;
+    src: url(static/Sora-SemiBold.ttf);
+}
+@font-face {
+    font-family: variable;
+    src: url(Sora-VariableFont_wght.ttf);
+}
+.menubar{
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    font-size: 11px;
+
+}
+.stats{
+    display: flex;
+    transform: translateY(-12%);
+}
+.stat{
+    margin-right: 5px;
+    font-family: variable;
+    color: hsl(240, 1%, 59%);
+}
+.statO{
+    font-family: semibold;
+}
+#statA{
+    color: hsl(354, 63%, 57%);
+    font-family: bold;
+    font-size: 12px;
+}
+#statT{
+    color: hsl(49, 85%, 70%);
+    font-family: bold;
+    font-size: 12px;
+}
+.mbL{
+    position: absolute;
+    right: 0;
+    display: flex;
+    font-family: regular;
+    color: hsl(240, 1%, 59%);
+    transform: translateY(-5%);
+}
+.difB,.modeB{
+    background-color: hsl(0, 0%, 7%);
+    border: 1px solid hsl(240, 1%, 59%);
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 400;
+    padding: 4px;
+    font-family: regular;
+    font-size: 9px;
+    cursor: pointer;
+}
+.difB:hover,.modeB:hover{
+    color: hsl(214, 100%, 55%);
+    border-color: hsl(214, 100%, 55%);
+}
+.difB:focus,.modeB:focus{
+    outline: 2px solid hsl(214, 100%, 55%);
+    outline-offset: 2px;
+}
+.vl{
+    height: 1rem;
+    width: 0px;
+    border: 0.1px solid hsl(240, 1%, 59%);
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#hr{
+    margin-top: 0px;
+    color: blue;
+    min-width: 100%;
+    height: 0px;
+    border-top: 1px solid hsl(240, 1%, 59%);
+}
+#start2{
+    font-family: regular;
+    
+}
+#restart{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5rem;
+    background-color: hsl(240, 3%, 46%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: variable;
+    cursor: pointer;
+    font-size: 11px;
+}
+#start2 span.correct{
+    color: hsl(140, 63%, 57%);
+}
+#start2 span.wrong{
+    color: hsl(354, 63%, 57%);
+    
+}
+#start2 span.idle{
+    color: white;
+}
+#start2 span.cursor{
+    outline: 0px solid hsl(240, 1%, 59%);
+    padding: 1px;
+    background-color: hsla(240, 1%, 59%, 0.637);
+    border: none;
+    border-radius: 3px;
+    border-color: transparent;
+}
+input{
+    visibility: hidden;
+    pointer-events: none;
+    
+}
