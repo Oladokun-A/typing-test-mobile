@@ -74,16 +74,6 @@ body{
 .statO{
     font-family: semibold;
 }
-#statA{
-    color: hsl(354, 63%, 57%);
-    font-family: bold;
-    font-size: 12px;
-}
-#statT{
-    color: hsl(49, 85%, 70%);
-    font-family: bold;
-    font-size: 12px;
-}
 .mbL{
     position: absolute;
     right: 0;
@@ -129,49 +119,37 @@ body{
     height: 0px;
     border-top: 1px solid hsl(240, 1%, 59%);
 }
-#start2{
-    font-family: regular;
-    
+#blurredText{
+    filter: blur(4px);
+    color:hsl(240, 1%, 59%) ;
+    position: relative;
+    font-size: 1.5rem;
 }
-#restart{
+#innerStart{
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1.5rem;
-    background-color: hsl(240, 3%, 46%);
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: regular;
+    font-size: 13px;
+}
+
+#startB{
+    background-color: hsl(214, 100%, 55%);
     color: white;
     border: none;
-    border-radius: 6px;
-    padding: 8px;
-    font-family: variable;
+    border-radius: 8px;
+    padding: 10px;
     cursor: pointer;
-    font-size: 11px;
+    font-family: regular;
 }
-#start2 span.correct{
-    color: hsl(140, 63%, 57%);
+#startB:hover{
+    background-color: hsl(210, 100%, 65%);
 }
-#start2 span.wrong{
-    color: hsl(354, 63%, 57%);
-    
-}
-#start2 span.idle{
-    color: white;
-}
-#start2 span.cursor{
-    outline: 0px solid hsl(240, 1%, 59%);
-    padding: 1px;
-    background-color: hsla(240, 1%, 59%, 0.637);
-    border: none;
-    border-radius: 3px;
-    border-color: transparent;
-}
-input{
-    color: transparent;
-    border-color: transparent;
-    pointer-events: none;
-    width: 20px;
-    overflow: hidden;
-}
-input:focus{
-    border-color: transparent;
+#startB:focus{
+    outline: 2px solid hsl(214, 100%, 55%);
+    outline-offset: 2px;
 }
