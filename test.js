@@ -86,6 +86,7 @@ function initStartedPage() {
 
   // Key handling
   input.focus()
+  textArea.addEventListener("click",()=>input.focus() )
   const onKeyDown = (event) => {
     // Start the timer exactly once on first keypress that we accept
     if (!timerStarted && (event.key === "Backspace" || event.key.length === 1)) {
